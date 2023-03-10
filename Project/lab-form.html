@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">       
+        <form>
+            <h2>1. Your Contact Details </h2>
+            <div class="user-container">
+                <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                <input type="text" name="patientId" id="patientId" placeholder="Patient Id if Exists">
+                <input type="tel" required minlength="0000000009" maxlength="999999999999" placeholder="Contact Number" >
+                <input type="email" placeholder="Email Id" required>
+            </div>  
+            
+            <div class="address-container">
+                <h2>2. Address </h2>
+                <input type="text" name="houseNumber" id="houseNumber" placeholder="H. No" required>
+                <input type="text" name="street" id="street" placeholder="Street">
+                <input type="text" placeholder="Area" required>
+                <label for="district">District</label>
+                <select name="district" id="district">
+                    <option value="district" selected>Choose</option>
+                    <option value="district">Central Delhi</option>
+                    <option value="district">East Delhi</option>
+                    <option value="district" >West Delhi</option>
+                    <option value="district">North Delhi</option>
+                </select>
+            </div>  
+            
+            <div class="test-type">
+                <label for="test-type">Choose the Test Type (Check atleast one box without fail)</label>
+                <input type="checkbox" name="test-checkbox" id="test-checkbox">CBC
+                <input type="checkbox" name="test-checkbox" id="test-checkbox">Complete Urine
+                <input type="checkbox" name="test-checkbox" id="test-checkbox">	Lipid Profile
+                <input type="checkbox" name="test-checkbox" id="test-checkbox">	Thyroid Stimulating Hormone(TSH)
+                <input type="checkbox" name="test-checkbox" id="test-checkbox">Glucose Test
+
+                
+                <label for="test-type">Do you want a hard copy of the report also?</label>
+                <input type="radio" name="radio" id="radio">Yes
+                <input type="radio" name="radio" id="radio">No
+                
+                <label for="test-type">Select Your Comfortable Date and Time</label>
+                <label for="test-type">Date</label>
+                <input type="date" name="date" id="date">
+
+                <label for="test-type">Time</label>
+                <input type="time" name="time" id="time">
+            </div>
+
+            <aside><img src="img/Lab-Test/lab-test.jpg" alt=""></aside>
+        </form>
+    </div>
+</body>
+</html>

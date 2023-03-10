@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+h1 {
+    background-color: #454545;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    padding-right: 2.5em;
+    padding-top: 1.2em;
+    padding-bottom: .3em;
+    margin-left: -33px;
+    padding-left: 0px;
+}
+
+
+.menu-bar {
+    background-color: #999999;
+    padding-left: 2em;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 850px;
+}
+
+.menu-bar ul li {
+    width: 155px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu-bar ul>li:first-child {
+    text-align: center;
+}
+
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu-bar ul li {
+    margin: 0;
+}
+
+.menu-bar ul li:hover {
+    background-color: #454545;
+
+}
+
+.fas {
+    margin-left: 10px;
+    color: white;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: #999999;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+    background-color: #E8E8E8;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 155px;
+    padding: 10px;
+    text-align: left;
+}
+
+.sub-menu-1 ul li:hover {
+    background-color: #999999;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: white;
+}
+
+
+.sub-menu-1 ul li a {
+    color: #1b5fde;
+}
+
+.offer-slider {
+    border: 2px solid steelblue;
+    height: 60vh;
+    background-image: url(img/Animation/ani1.jpg);
+    background-repeat: no-repeat;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    background-size: 100% 100%;
+    animation: offerSlideShow 30s infinite;
+    animation-play-state: running;
+
+}
+
+@keyframes offerSlideShow {
+    0% {
+        background-image: url(img/Animation/ani1.jpg);
+    }
+
+    20% {
+        background-image: url(img/Animation/ani2.png);
+    }
+
+    40% {
+        background-image: url(img/Animation/ani3.jpg);
+    }
+
+    60% {
+        background-image: url(img/Animation/ani4.jpg);
+    }
+
+    80% {
+        background-image: url(img/Animation/ani5.jpg);
+    }
+
+    100% {
+        background-image: url(img/Animation/ani1.jpg);
+    }
+}
+
+
+
+.product-wrapper {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.product-card {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: .5rem;
+    width: fit-content;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 2.2em;
+    background-color: #efeff7;
+    font-weight: bold;
+}
+
+
+
+
+.product-card img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+
+}
+
+.product-card img:hover {
+    width: 310px;
+    height: 210px;
+
+}
+
+
+
+.product-card button {
+    width: 275px;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 0.7rem;
+    background-color: #E6E6FA;
+    border: 2px solid #a0a0df;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-card button:active {
+    background-color: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+    color: #a0a0df;
+}
+
+.product-info>p {
+    font-weight: bold;
+    font-size: small;
+    color: #6262e0;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-title {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: block;
+    position: relative;
+    background-color: #080101;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}
