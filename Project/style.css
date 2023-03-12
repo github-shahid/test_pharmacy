@@ -116,8 +116,7 @@ h1 {
     margin-right: 1px;
     margin-top: 1px;
     background-size: 100% 100%;
-    animation: offerSlideShow 30s infinite;
-    animation-play-state: running;
+    animation: offerSlideShow 30s infinite;     
 
 }
 
@@ -143,7 +142,7 @@ h1 {
     }
 
     100% {
-        background-image: url(img/Animation/ani1.jpg);
+        background-image: url(img/Animation/ani3.jpg);
     }
 }
 
@@ -223,4 +222,125 @@ footer {
     padding: 20px;
     text-align: center;
     bottom: 0;
+}
+
+
+/* Form CSS */
+
+.form-container {
+    display: block;
+    width: 40%;
+    margin: 3.5rem 3rem 3rem 3.5rem;
+
+}
+
+input {
+    margin: 0.5rem;
+    border: none;
+    border-bottom: 2px solid rgb(230, 222, 222);
+    padding-top: .3rem;
+    padding-bottom: .1rem;
+    width: 13.3rem;
+    
+
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    padding: .3rem;
+
+}
+
+select {
+    width: 7rem;
+    padding: .1rem;
+    border-radius: 0;
+    margin-top: .6rem;
+    margin-left: .3rem;
+}
+
+
+
+.test-details h3 {
+    font-weight: bold;
+    margin-top: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.test-details h3 span{
+    font-weight: lighter;
+    font-size: small;
+}
+
+h3::after{
+    content: "*";
+    color: red;
+    font-weight: lighter;
+    font-size: small;
+    
+}
+
+.test-checkbox{
+    text-indent: -5rem;
+}
+
+.date-time{
+    width: 6.5rem;
+    
+}
+
+.date-wrapper{
+    margin-left: rem;
+}
+
+input[type = "radio"],[ type ="checkbox"]{
+    width: 50px;
+    margin-left: 5rem;
+}
+
+label[for="date-time"]{
+    margin-left: 1.2rem;
+    margin-top: -1rem;
+}
+
+
+/* IFRAME CSS */
+
+iframe {
+    height: 85vh;
+    width: 80%;
+    margin-left: 8rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    background-image: url("img/Lab-Test/lab-test.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.form-btn {
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 7rem;
+    background-color: rgb(193, 144, 238);
+    border: 2px solid rgb(150, 77, 218);
+}
+
+.form-btn:active{
+    background-color: rgb(149, 60, 233);
+    border: 2px solid rgb(18, 9, 25);
+
+}
+
+#btn{
+    margin-left: 38rem;
+    margin-top: -2rem;
 }
